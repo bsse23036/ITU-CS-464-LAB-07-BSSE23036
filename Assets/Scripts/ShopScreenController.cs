@@ -51,7 +51,7 @@ public class ShopScreenController : MonoBehaviour
 
         if (ViceGameData.Instance.ownedItems.Contains(item))
         {
-            ShowToast($"{item} ALREADY UNLOCKED ✓", new Color32(56, 189, 248, 255));
+            ShowToast($"{item} ALREADY UNLOCKED", new Color32(56, 189, 248, 255));
             return;
         }
 
@@ -109,7 +109,7 @@ public class ShopScreenController : MonoBehaviour
 
             if (buyButtonLabels != null && i < buyButtonLabels.Length && buyButtonLabels[i] != null)
             {
-                buyButtonLabels[i].text = owned ? "OWNED ✓" : $"BUY  ${itemCosts[i]:N0}";
+                buyButtonLabels[i].text = owned ? "OWNED" : $"BUY  ${itemCosts[i]:N0}";
                 buyButtonLabels[i].color = owned
                     ? new Color32(148, 163, 184, 255)
                     : new Color32(11, 17, 32, 255);

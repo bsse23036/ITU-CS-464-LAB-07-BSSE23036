@@ -92,7 +92,7 @@ public class LoadoutScreenController : MonoBehaviour
 
             if (labels[i] != null)
             {
-                labels[i].text = isEquipped ? "EQUIPPED ✓" : (isOwned ? "EQUIP" : "GET IN SHOP >");
+                labels[i].text = isEquipped ? "EQUIPPED" : (isOwned ? "EQUIP" : "GET IN SHOP >");
                 labels[i].color = isOwned ? new Color32(11, 17, 32, 255) : new Color32(248, 250, 252, 255);
             }
 

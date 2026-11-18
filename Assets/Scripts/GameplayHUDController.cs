@@ -90,7 +90,7 @@ public class GameplayHUDController : MonoBehaviour
         int secs = Mathf.FloorToInt(elapsedMissionTime % 60f);
 
         if (timerScoreText != null)
-            timerScoreText.text = $"TIME: {mins:00}:{secs:00}   •   SCORE: {currentScore:N0}";
+            timerScoreText.text = $"TIME: {mins:00}:{secs:00}   -   SCORE: {currentScore:N0}";
 
         if (healthFill != null) healthFill.fillAmount = 1.0f;
         if (healthLabel != null) healthLabel.text = "ARMOR HP: 100%";
